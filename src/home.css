@@ -1,0 +1,13 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+}
+
+.home-title {
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: 'helvetica', sans-serif;
+}
