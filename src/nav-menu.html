@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigations Menu</title>
+    <link rel="stylesheet" href="nav-menu.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelector('.hamburger-menu').addEventListener('click', () => {
+                const navbar = document.querySelector('.navbar');
+                navbar.style.display = navbar.style.display === 'flex' ? 'none' : 'flex';
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
