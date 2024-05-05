@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="loadHeader.js"></script>
-    <script src="loadNavMenu.js"></script>
+    <title>Simple Graph Generator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="header"></div>
-    <div id="menu-container"></div>
-    <div class="main-container">
-        <h1 class="home-title"> Welcome to my webpage!</h1>
-    </div>
+<div class="container">
+    <label for="nodeCount">Number of Nodes:</label>
+    <input type="number" id="nodeCount" value="5" min="1" max="100">
+    <button id="generate">Generate Graph</button>
+    <canvas id="canvas" width="800" height="600"></canvas>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
